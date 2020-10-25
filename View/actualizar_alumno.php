@@ -1,4 +1,7 @@
 <html>
+    <head>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">  
+    </head>
     <body>
         <h2>Modificar</h2>
 
@@ -23,7 +26,7 @@
             <label for="nota">Nota alumno:</label><br>
             <input type="text" id="nota" name="nota"><br>
             <input type="hidden" name="id" value="<?php echo $id; ?>"><br>
-            <input type="submit" value="Submit">
+            <input type="submit" value="Insertar nota">
         </form>
     </body>
 </html>
