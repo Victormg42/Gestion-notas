@@ -1,5 +1,6 @@
 <?php
-include '../Model/conexion.php';
+//include '../Model/conexion.php';
+require_once '../Model/alumnoDAO.php';
 $id_alum=-1;
 //print_r($lista_persona);
 echo "<a href='crear_alumno.html?id_alum=$id_alum'>Insertar </a>";
@@ -11,13 +12,15 @@ echo "<a href='crear_alumno.html?id_alum=$id_alum'>Insertar </a>";
             <input type="text" id="fnombre" name="fnombre" placeholder="Introduce el nombre...">
         <label for="fapellido">Primer apellido</label>
             <input type="text" id="fapellido" name="fapellido" placeholder="Introduce el apellido...">
-        <input type="submit" value="Buscar">
+        <input type="submit" value="Filtrar">
 </div>
 
 <?php
 if(isset($_POST['fnombre']) || isset($_POST['fapellido'])){
+    $alumno = new AlumnoDao();
+    echo $alumno->filtrarAlumno();
     //filtrará los alumnos por nombre y primer apellido//
-    $q = "SELECT id_alum, nombre_alum, apellido1, apellido2 FROM tbl_alumnos WHERE nombre_alum 
+    /*$q = "SELECT id_alum, nombre_alum, apellido1, apellido2 FROM tbl_alumnos WHERE nombre_alum 
     LIKE '%{$_POST['fnombre']}%' AND apellido1 LIKE '%{$_POST['fapellido']}%'";
     $sentencia = $pdo->prepare($q);
     $sentencia->execute();
@@ -49,12 +52,13 @@ foreach($lista_alumno as $alumno) {
     $id_alum=$alumno['id_alum'];
     echo "</tr>";
     }
-echo "</table>";
+echo "</table>";*/
 
 } else {
-
+$alumno = new AlumnoDao();
+echo $alumno->mostrarAlumno();
 //echo "<a href='filtrar_alumno.html?id_alum=$id_alum'>Filtrar </a>";
-$query="SELECT id_alum, nombre_alum, apellido1, apellido2 FROM tbl_alumnos";
+/*$query="SELECT * FROM tbl_alumnos";
 $sentencia=$pdo->prepare($query);
 $sentencia->execute();
 $id_alum=-1;
@@ -85,6 +89,6 @@ foreach($lista_alumno as $alumno) {
     $id_alum=$alumno['id_alum'];
     echo "</tr>";
     }
-echo "</table>";
+echo "</table>";*/
 }
 ?>
