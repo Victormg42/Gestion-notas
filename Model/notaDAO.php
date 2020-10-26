@@ -6,4 +6,8 @@ class NotaDao{
     public function __construct(){
         include 'conexion.php';
     }
+
+    public function modificarNotas(){
+        
+    }
 }
