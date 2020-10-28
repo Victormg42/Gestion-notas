@@ -135,7 +135,7 @@ class AlumnoDao{
                 $sentencia->bindParam(5,$email);
                 $sentencia->bindParam(6,$pas);
                 $sentencia->execute();
-            $id_alum = $pdo->lastInsertId();
+                $id_alum = $pdo->lastInsertId();
             echo "todo bien";
             //hacer todas las sentencias
             $pdo->commit();

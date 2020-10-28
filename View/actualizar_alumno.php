@@ -21,8 +21,6 @@
             <input type="text" id="nombre_alum" name="nombre_alum" value=<?php echo $alumno['nombre_alum']; ?>><br>
             <label for="apellido1">Primer apellido:</label><br>
             <input type="text" id="apellido1" name="apellido1" value=<?php echo $alumno['apellido1']; ?>><br>
-            <label for="nom_asig">Nombre asignatura:</label><br>
-            <input type="text" id="nom_asig" name="nom_asig"><br>
             <label for="nota">Nota alumno:</label><br>
             <input type="text" id="nota" name="nota"><br>
             <input type="hidden" name="id" value="<?php echo $id; ?>"><br>
