@@ -1,9 +1,13 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+    </head>
+</html>
 <?php
-//include '../Model/conexion.php';
 require_once '../Model/alumnoDAO.php';
+require_once '../Controller/sessionController.php';
 $id_alum=-1;
-//print_r($lista_persona);
-echo "<a href='crear_alumno.html?id_alum=$id_alum'>Insertar </a>";
+echo "<div class='insertar'><a href='crear_alumno.html?id_alum=$id_alum'>Insertar</a></div>";
 ?>
 
 <div class="form">

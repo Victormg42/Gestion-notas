@@ -21,8 +21,12 @@
             <input type="text" id="nombre_alum" name="nombre_alum" value=<?php echo $alumno['nombre_alum']; ?>><br>
             <label for="apellido1">Primer apellido:</label><br>
             <input type="text" id="apellido1" name="apellido1" value=<?php echo $alumno['apellido1']; ?>><br>
-            <label for="nota">Nota alumno:</label><br>
-            <input type="text" id="nota" name="nota"><br>
+            <label for="notam">Nota Matematicas:</label><br>
+            <input type="number" id="notam" name="notam"><br>
+            <label for="notaf">Nota Fisica:</label><br>
+            <input type="number" id="notaf" name="notaf"><br>
+            <label for="notap">Nota Programacion:</label><br>
+            <input type="number" id="notap" name="notap"><br>
             <input type="hidden" name="id" value="<?php echo $id; ?>"><br>
             <input type="submit" value="Insertar nota">
         </form>

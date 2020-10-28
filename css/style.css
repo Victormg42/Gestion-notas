@@ -1,4 +1,8 @@
-input[type=email], input[type=password], input[type=text] {
+body {
+  margin: 0;
+}
+
+input[type=email], input[type=password], input[type=text], input[type=number] {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -28,3 +32,34 @@ input[type=email], input[type=password], input[type=text] {
     background-color: #f2f2f2;
     padding: 20px;
   }
+
+  .logo {
+    background-color: #ccc;
+    color: black;
+    padding: 5px;
+    font-size: 10px;
+    overflow: hidden;
+}
+
+.logo h1 {
+    float: left;
+    display: block;
+}
+
+.logo a {
+    text-decoration: none;
+    color: black;
+}
+
+.insertar {
+  text-decoration: none;
+  font-size: 20px;
+}
+
+th {
+  background-color: #18DCEC;
+}
+
+td {
+  background-color: #B7EFF4;
+}
