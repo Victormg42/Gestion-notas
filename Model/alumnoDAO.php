@@ -6,7 +6,6 @@ class AlumnoDao{
 
     }
 
-
     public function mostrarAlumno(){
         include 'conexion.php';
         $query = "SELECT * FROM tbl_alumnos";
