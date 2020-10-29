@@ -57,9 +57,10 @@ input[type=email], input[type=password], input[type=text], input[type=number] {
 }
 
 th {
-  background-color: #18DCEC;
+  background-color: #318a4f;
+  color: white;
 }
 
 td {
-  background-color: #B7EFF4;
+  background-color: #6ee978;
 }
